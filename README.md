@@ -2,7 +2,7 @@
 
 ## 🚀 Live Demo
 
-👉 [https://your-portfolio-link.com](https://personal-portfolio-4k8u4dear-natalias-projects-f62a933e.vercel.app/)
+👉 [https://personal-portfolio.vercel.app/](https://personal-portfolio-4k8u4dear-natalias-projects-f62a933e.vercel.app/)
 
 ---
 
@@ -38,7 +38,7 @@ The goal of this project is to create a clean, modern, and user-friendly interfa
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/NataliaPanchenko/personal-portfolio.git
 ```
 
 Install dependencies:
