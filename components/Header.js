@@ -200,6 +200,6 @@ const MobileLink = styled.a`
   transition: 0.3s;
 
   &:hover {
-    color: #cb97b0;
+    color: var(--nav-hover-color);
   }
 `;

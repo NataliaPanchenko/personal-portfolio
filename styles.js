@@ -9,6 +9,15 @@ export default createGlobalStyle`
     --theme-button: #ddd3d9;
     --mobile-menu-bg: #f6f1f4;
     --border-color: #e7dfe4;
+
+    --main-color: #ffffff;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --badge-bg: #f6e6ef;
+    --badge-color: #c98aa6;
+    --subtitle-color: #666;
+    --primary-button: #d6a3b8;
+    --primary-button-bg: #c78aa3;
+    --text-color: #444;
   }
 
   *,
