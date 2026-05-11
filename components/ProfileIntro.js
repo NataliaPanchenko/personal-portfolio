@@ -30,7 +30,7 @@ export default function ProfileIntro() {
     <Wrapper $loaded={loaded}>
       <ImageWrapper>
         <Image
-          src="/photo.jpg"
+          src="/photo.JPG"
           alt="Profile photo"
           width={180}
           height={180}
