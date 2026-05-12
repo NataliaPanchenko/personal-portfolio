@@ -1,0 +1,19 @@
+[{
+        "id": 1,
+        "icon": "🖥️",
+        "title": "Frontend Focus",
+        "text": "Specializing in React, TypeScript, and modern CSS frameworks"
+    },
+    {
+        "id": 2,
+        "icon": "🎨",
+        "title": "Design Minded",
+        "text": "Strong understanding of UI/UX principles and responsive design"
+    },
+    {
+        "id": 3,
+        "icon": "🚀",
+        "title": "Always Learning",
+        "text": "Continuously expanding my skillset and exploring new technologies"
+    }
+]
