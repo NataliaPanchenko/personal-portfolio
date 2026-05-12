@@ -84,6 +84,6 @@ const Right = styled.div`
 
 const Text = styled.p`
   line-height: 1.8;
-  color: #444;
+  color: var(--text-color);
   margin-bottom: 24px;
 `;

@@ -5,7 +5,6 @@ export default function AboutCard({ icon, title, text }) {
     <Card>
       <Content>
         <Icon>{icon}</Icon>
-
         <Title>{title}</Title>
       </Content>
       <Text>{text}</Text>
@@ -15,7 +14,7 @@ export default function AboutCard({ icon, title, text }) {
 
 const Card = styled.div`
   background: white;
-  border: 2px solid #f4e8ed;
+  border: 2px solid var(--card-border);
   border-radius: 24px;
   padding: 14px;
   display: flex;
@@ -24,7 +23,7 @@ const Card = styled.div`
   transition: 0.2s ease;
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px var(--box-shadow);
   }
 `;
 
@@ -32,7 +31,7 @@ const Icon = styled.div`
   min-width: 50px;
   height: 50px;
   border-radius: 18px;
-  background: #e8b7ca;
+  background: var(--icon-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +53,7 @@ const Title = styled.h3`
 `;
 
 const Text = styled.p`
-  color: #555;
+  color: var(--text-dark-color);
   line-height: 1.6;
   margin-top: 0;
 `;
