@@ -59,7 +59,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
-
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
@@ -76,7 +75,6 @@ const Left = styled.div`
 
 const Right = styled.div`
   flex: 1;
-
   display: flex;
   flex-direction: column;
   gap: 24px;
