@@ -9,7 +9,6 @@ export default createGlobalStyle`
     --theme-button: #ddd3d9;
     --mobile-menu-bg: #f6f1f4;
     --border-color: #e7dfe4;
-
     --main-color: #ffffff;
     --box-shadow-color: rgba(0, 0, 0, 0.1);
     --badge-bg: #f6e6ef;
@@ -18,6 +17,10 @@ export default createGlobalStyle`
     --primary-button: #d6a3b8;
     --primary-button-bg: #c78aa3;
     --text-color: #444;
+    --card-border: #f4e8ed;
+    --box-shadow: rgba(0, 0, 0, 0.06);
+    --icon-bg: #e8b7ca;
+    --text-dark-color: #555;
   }
 
   *,
