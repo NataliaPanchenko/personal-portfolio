@@ -27,6 +27,8 @@ export default createGlobalStyle`
     --border-color: #d39ab5;
     --box-shadow: 0 12px 30px rgba(211, 154, 181, 0.18),
       0 4px 12px rgba(0, 0, 0, 0.06);
+    --before-item-bg: #ead5df;
+    --year-color: #d39ab5;
   }
 
   *,
