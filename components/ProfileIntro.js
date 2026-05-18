@@ -96,12 +96,8 @@ const Badge = styled.div`
 
 const Title = styled.h1`
   margin-top: 20px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
-
-  @media (min-width: 768px) {
-    font-size: 36px;
-  }
 `;
 
 const Subtitle = styled.h2`
