@@ -14,13 +14,14 @@ export default createGlobalStyle`
     --badge-bg: #f6e6ef;
     --badge-color: #c98aa6;
     --subtitle-color: #666;
-    --primary-button: #d6a3b8;
-    --primary-button-bg: #c78aa3;
+    --main-color: #d6a3b8;
+    --main-color-bg: #c78aa3;
     --text-color: #444;
     --card-border: #f4e8ed;
     --box-shadow: rgba(0, 0, 0, 0.06);
     --icon-bg: #e8b7ca;
     --text-dark-color: #555;
+    --icon-hover: #6d455a;
   }
 
   *,
