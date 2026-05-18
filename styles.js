@@ -22,6 +22,11 @@ export default createGlobalStyle`
     --icon-bg: #e8b7ca;
     --text-dark-color: #555;
     --icon-hover: #6d455a;
+    --tag-color: #5f4a56;
+    --tag-hover: #e8d7df;
+    --border-color: #d39ab5;
+    --box-shadow: 0 12px 30px rgba(211, 154, 181, 0.18),
+      0 4px 12px rgba(0, 0, 0, 0.06);
   }
 
   *,

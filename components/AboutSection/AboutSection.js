@@ -52,7 +52,7 @@ const Section = styled.section`
 const Title = styled.h2`
   text-align: center;
   margin-bottom: 50px;
-  font-size: 24px;
+  font-size: 22px;
 `;
 
 const Container = styled.div`
