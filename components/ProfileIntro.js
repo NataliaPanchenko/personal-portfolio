@@ -96,7 +96,7 @@ const Badge = styled.div`
 
 const Title = styled.h1`
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
 `;
 
@@ -105,7 +105,6 @@ const Subtitle = styled.h2`
   font-weight: 500;
   color: var(--subtitle-color);
   margin-top: 8px;
-
   @media (min-width: 768px) {
     font-size: 18px;
   }
@@ -144,7 +143,6 @@ const SecondaryButton = styled.button`
   font-weight: 500;
   cursor: pointer;
   transition: 0.2s ease;
-
   &:hover {
     background: var(--badge-bg);
     transform: translateY(-2px);
@@ -157,7 +155,6 @@ const Text = styled.p`
   font-size: 14px;
   line-height: 1.5;
   color: var(--text-color);
-
   @media (min-width: 768px) {
     font-size: 16px;
   }

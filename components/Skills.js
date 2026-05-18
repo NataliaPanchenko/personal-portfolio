@@ -74,7 +74,7 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h2`
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   text-align: center;
   color: var(--text-color);
