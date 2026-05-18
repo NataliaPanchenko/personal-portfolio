@@ -64,13 +64,10 @@ const Wrapper = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   padding: 60px 20px;
   text-align: center;
-
   opacity: ${({ $loaded }) => ($loaded ? 1 : 0)};
   animation: ${({ $loaded }) => ($loaded ? fadeUp : "none")} 0.8s ease-out;
-
   @media (min-width: 768px) {
     padding: 90px 20px;
   }
@@ -83,8 +80,8 @@ const ImageWrapper = styled.div`
   overflow: hidden;
   border: 4px solid var(--main-color);
   box-shadow: 0 10px 30px var(--box-shadow-color);
-
   animation: ${float} 4s ease-in-out infinite;
+  z-index: 1;
 `;
 
 const Badge = styled.div`
@@ -127,7 +124,7 @@ const ButtonGroup = styled.div`
 `;
 
 const PrimaryButton = styled.button`
-  background: var(--primary-button);
+  background: var(--main-color);
   color: white;
   border: none;
   padding: 12px 18px;
@@ -138,14 +135,14 @@ const PrimaryButton = styled.button`
 
   &:hover {
     transform: translateY(-2px);
-    background: var(--primary-button-bg);
+    background: var(--main-color-bg);
   }
 `;
 
 const SecondaryButton = styled.button`
   background: transparent;
-  color: var(--primary-button);
-  border: 2px solid var(--primary-button);
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
   padding: 10px 18px;
   border-radius: 999px;
   font-weight: 500;

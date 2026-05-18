@@ -109,7 +109,7 @@ const DesktopNavigation = styled.nav`
   display: flex;
   align-items: center;
   gap: 50px;
-
+  z-index: 1000;
   @media (max-width: 768px) {
     display: none;
   }
@@ -181,14 +181,11 @@ const MobileMenu = styled.div`
   flex-direction: column;
   gap: 28px;
   border-bottom: 1px solid var(--border-color);
-
+  z-index: 2000;
   transform: ${({ $isOpen }) =>
     $isOpen ? "translateY(0)" : "translateY(-120%)"};
-
   opacity: ${({ $isOpen }) => ($isOpen ? 0.8 : 0)};
-
   pointer-events: ${({ $isOpen }) => ($isOpen ? "all" : "none")};
-
   transition: 0.35s ease;
 `;
 
@@ -198,7 +195,6 @@ const MobileLink = styled.a`
   font-size: 20px;
   font-weight: 500;
   transition: 0.3s;
-
   &:hover {
     color: var(--nav-hover-color);
   }
