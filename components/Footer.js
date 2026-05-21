@@ -37,7 +37,6 @@ export default function Footer() {
 
 const FooterWrapper = styled.footer`
   width: 100%;
-  border-top: 1px solid var(--border-color);
   background: var(--mobile-menu-bg);
 `;
 

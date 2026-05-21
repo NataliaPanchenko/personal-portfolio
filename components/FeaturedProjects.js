@@ -2,22 +2,20 @@ import styled from "styled-components";
 
 const projects = [
   {
-    title: "E-Commerce Dashboard",
+    title: "Event Finder",
     description:
-      "A responsive admin dashboard for managing products, orders, and customers. Built with React, TypeScript, and Tailwind CSS.",
+      "A web platform for discovering and booking local events such as concerts, meetups, conferences, and community activities. Users can browse events, search for interesting activities, view detailed event information, reserve and purchase tickets, and manage their bookings through a personal profile dashboard. The platform also includes user authentication, allowing users to sign up, log in securely, and access their personal information and booking history.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
-    link: "#",
-  },
-  {
-    title: "Weather App",
-    description:
-      "Real-time weather application with location search and 5-day forecast. Integrated with OpenWeatherMap API.",
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
-    tags: ["React", "JavaScript", "REST API", "CSS Modules"],
-    link: "#",
+    tags: [
+      "Next.js",
+      "JavaScript",
+      "MongoDB",
+      "NextAuth",
+      "Next.js API Routes",
+      "Styled Components",
+    ],
+    link: "https://event-finder-pearl.vercel.app/",
   },
 ];
 
@@ -27,7 +25,7 @@ export default function FeaturedProjects() {
       <Heading>Featured Projects</Heading>
 
       <Subtitle>
-        A selection of projects I've worked on, demonstrating my skills and
+        A selection of projects I&apos;ve worked on, demonstrating my skills and
         passion for frontend development
       </Subtitle>
 
@@ -47,7 +45,13 @@ export default function FeaturedProjects() {
                 ))}
               </Tags>
 
-              <Link href={project.link}>View Project →</Link>
+              <Link
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project →{" "}
+              </Link>
             </Content>
           </Card>
         ))}
@@ -57,8 +61,7 @@ export default function FeaturedProjects() {
 }
 
 const Section = styled.section`
-  padding: 4rem 2rem;
-  background: #f8f7f8;
+  padding: 0 2rem 2rem 2rem;
   min-height: 100vh;
 `;
 
@@ -66,20 +69,21 @@ const Heading = styled.h2`
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-color);
 `;
 
 const Subtitle = styled.p`
   text-align: center;
   max-width: 700px;
   margin: 1rem auto 3rem;
-  color: #4b5563;
+  color: var(--text-color);
   line-height: 1.6;
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 600px));
+  justify-content: center;
   gap: 2rem;
 `;
 
@@ -87,12 +91,12 @@ const Card = styled.div`
   background: white;
   border-radius: 24px;
   overflow: hidden;
-  border: 2px solid #f3d1e3;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-  transition: 0.3s ease;
-
+  border: 1px solid var(--main-color);
+  transition: all 0.3s ease;
   &:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
+    border-color: var(--border-color);
+    box-shadow: var(--box-shadow);
   }
 `;
 
@@ -108,12 +112,12 @@ const Content = styled.div`
 
 const Title = styled.h3`
   font-size: 1.8rem;
-  color: #374151;
+  color: var(--text-color);
   margin-bottom: 1rem;
 `;
 
 const Description = styled.p`
-  color: #4b5563;
+  color: var(--text-color);
   line-height: 1.7;
   margin-bottom: 1.5rem;
 `;
@@ -126,7 +130,7 @@ const Tags = styled.div`
 `;
 
 const Tag = styled.span`
-  background: #d8a9c4;
+  background: var(--main-color);
   color: white;
   padding: 0.45rem 1rem;
   border-radius: 999px;
@@ -134,11 +138,10 @@ const Tag = styled.span`
 `;
 
 const Link = styled.a`
-  color: #d19abc;
+  color: var(--main-color);
   text-decoration: none;
   font-weight: 600;
   transition: 0.2s;
-
   &:hover {
     opacity: 0.7;
   }
