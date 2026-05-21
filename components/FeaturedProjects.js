@@ -1,23 +1,5 @@
 import styled from "styled-components";
-
-const projects = [
-  {
-    title: "Event Finder",
-    description:
-      "A web platform for discovering and booking local events such as concerts, meetups, conferences, and community activities. Users can browse events, search for interesting activities, view detailed event information, reserve and purchase tickets, and manage their bookings through a personal profile dashboard. The platform also includes user authentication, allowing users to sign up, log in securely, and access their personal information and booking history.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-    tags: [
-      "Next.js",
-      "JavaScript",
-      "MongoDB",
-      "NextAuth",
-      "Next.js API Routes",
-      "Styled Components",
-    ],
-    link: "https://event-finder-pearl.vercel.app/",
-  },
-];
+import projects from "@/db-assets/projects.json";
 
 export default function FeaturedProjects() {
   return (
@@ -107,7 +89,7 @@ const Image = styled.img`
 `;
 
 const Content = styled.div`
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 `;
 
 const Title = styled.h3`
@@ -120,6 +102,7 @@ const Description = styled.p`
   color: var(--text-color);
   line-height: 1.7;
   margin-bottom: 1.5rem;
+  white-space: pre-line;
 `;
 
 const Tags = styled.div`
