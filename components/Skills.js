@@ -148,7 +148,6 @@ const Tag = styled.span`
   font-size: 13px;
   line-height: 1.3;
   transition: 0.25s ease;
-
   &:hover {
     background: var(--tag-hover);
     transform: scale(1.02);

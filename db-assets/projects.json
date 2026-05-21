@@ -1,0 +1,14 @@
+[{
+    "title": "Event Finder",
+    "description": "A web platform for discovering and booking local events such as concerts, meetups, conferences, and community activities. \n\n Users can browse events, search for interesting activities, view detailed event information, reserve and purchase tickets, and manage their bookings through a personal profile dashboard. The platform also includes user authentication, allowing users to sign up, log in securely, and access their personal information and booking history.",
+    "image": "/event-finder.jpg",
+    "tags": [
+        "Next.js",
+        "JavaScript",
+        "MongoDB",
+        "NextAuth",
+        "Next.js API Routes",
+        "Styled Components"
+    ],
+    "link": "https://event-finder-pearl.vercel.app/"
+}]

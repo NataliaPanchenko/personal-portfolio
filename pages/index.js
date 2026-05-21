@@ -4,6 +4,7 @@ import ProfileIntro from "@/components/ProfileIntro";
 import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import FeaturedProjects from "@/components/FeaturedProjects";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <AboutSection />
       <Skills />
       <Experience />
+      <FeaturedProjects />
 
       <Footer />
     </>
