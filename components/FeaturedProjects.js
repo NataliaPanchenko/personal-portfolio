@@ -18,9 +18,7 @@ export default function FeaturedProjects() {
 
             <Content>
               <Title>{project.title}</Title>
-
               <Description>{project.description}</Description>
-
               <Tags>
                 {project.tags.map((tag) => (
                   <Tag key={tag}>{tag}</Tag>
