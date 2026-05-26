@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import FeaturedProjects from "@/components/FeaturedProjects";
+import ContactSection from "@/components/ContactSection";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Skills />
       <Experience />
       <FeaturedProjects />
+      <ContactSection />
 
       <Footer />
     </>

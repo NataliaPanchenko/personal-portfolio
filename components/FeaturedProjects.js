@@ -41,13 +41,13 @@ export default function FeaturedProjects() {
 }
 
 const Section = styled.section`
-  padding: 0 2rem 2rem 2rem;
+  padding: 2rem;
   min-height: 100vh;
 `;
 
 const Heading = styled.h2`
   text-align: center;
-  font-size: 2rem;
+  font-size: 22px;
   font-weight: 700;
   color: var(--text-color);
 `;

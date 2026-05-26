@@ -29,6 +29,9 @@ export default createGlobalStyle`
       0 4px 12px rgba(0, 0, 0, 0.06);
     --before-item-bg: #ead5df;
     --year-color: #d39ab5;
+    --icon-color: #f3d6e3;
+    --input-border-color: #eee;
+    --white-color: #fff;
   }
 
   *,
