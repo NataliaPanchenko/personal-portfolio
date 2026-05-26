@@ -82,7 +82,7 @@ const Header = styled.div`
     margin-bottom: 10px;
   }
   p {
-    color: #666;
+    color: var(----text-dark-color);
   }
 `;
 
@@ -97,17 +97,17 @@ const Grid = styled.div`
 `;
 
 const InfoCard = styled.div`
-  background: #fff;
+  background: var(--header-bg);
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow-color);
 `;
 
 const FormCard = styled.div`
-  background: #fff;
+  background: var(--header-bg);
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow-color);
 `;
 
 const Title = styled.h3`
@@ -118,12 +118,10 @@ const InfoItem = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-
   span {
     font-size: 12px;
-    color: #999;
+    color: var(----text-dark-color);
   }
-
   p {
     margin: 0;
     font-weight: 500;
@@ -134,7 +132,7 @@ const Icon = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #f3d6e3;
+  background: var(--icon-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,11 +144,11 @@ const Input = styled.input`
   padding: 12px;
   margin-bottom: 15px;
   border-radius: 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--input-border-color);
   outline: none;
 
   &:focus {
-    border-color: #d18aa5;
+    border-color: var(--main-color);
   }
 `;
 
@@ -158,26 +156,24 @@ const TextArea = styled.textarea`
   width: 100%;
   padding: 12px;
   border-radius: 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--input-border-color);
   margin-bottom: 15px;
   outline: none;
-
   &:focus {
-    border-color: #d18aa5;
+    border-color: var(--main-color);
   }
 `;
 
 const Button = styled.button`
   width: 100%;
   padding: 12px;
-  background: #d18aa5;
-  color: #fff;
+  background: var(--main-color);
+  color: var(--white-color);
   border: none;
   border-radius: 10px;
   cursor: pointer;
   font-weight: 600;
-
   &:hover {
-    opacity: 0.9;
+    background-color: var(--year-color);
   }
 `;
