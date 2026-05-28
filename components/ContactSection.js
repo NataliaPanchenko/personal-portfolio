@@ -222,3 +222,10 @@ const Button = styled.button`
     background-color: var(--year-color);
   }
 `;
+
+const SuccessMessage = styled.p`
+  margin-top: 15px;
+  color: green;
+  font-weight: 500;
+  text-align: center;
+`;
