@@ -30,7 +30,7 @@ export default function ProfileIntro() {
     <Wrapper $loaded={loaded}>
       <ImageWrapper>
         <Image
-          src="/photo.JPG"
+          src="/profile-photo.jpg"
           alt="Profile photo"
           width={180}
           height={180}
@@ -43,7 +43,7 @@ export default function ProfileIntro() {
 
       <Badge>Available for opportunities</Badge>
 
-      <Title>Hi, I&apos;m Natalia Panchenko</Title>
+      <Title>Hi, I&apos;m NATALIA PANCHENKO</Title>
       <Subtitle>Junior Frontend Developer</Subtitle>
 
       <Text>
