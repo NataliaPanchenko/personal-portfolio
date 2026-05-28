@@ -65,7 +65,7 @@ export default function ContactSection() {
           <FormCard>
             <Title>Send a Message</Title>
 
-            <form>
+            <form action="https://formspree.io/f/xojbrjbp" method="POST">
               <Input type="text" placeholder="Your name" />
               <Input type="email" placeholder="Your email" />
               <TextArea placeholder="Your message..." rows="5" />
