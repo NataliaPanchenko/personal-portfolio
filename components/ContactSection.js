@@ -65,7 +65,7 @@ export default function ContactSection() {
               </Icon>
               <div>
                 <span>LinkedIn</span>
-                <p>linkedin.com/in/nataliapanchenko/</p>
+                <p>linkedin.com/in/nataliapanchenko</p>
               </div>
             </InfoItem>
 
@@ -92,9 +92,19 @@ export default function ContactSection() {
               method="POST"
               onSubmit={handleSubmit}
             >
-              <Input type="text" placeholder="Your name" name="name" />
-              <Input type="email" placeholder="Your email" name="email" />
-              <TextArea placeholder="Your message..." rows="5" name="message" />
+              <Input type="text" placeholder="Your name" name="name" required />
+              <Input
+                type="email"
+                placeholder="Your email"
+                name="email"
+                required
+              />
+              <TextArea
+                placeholder="Your message..."
+                rows="5"
+                name="message"
+                required
+              />
               {isSent && (
                 <SuccessMessage>
                   ✅ Your message has been sent! Thank you! ✨
@@ -224,8 +234,8 @@ const Button = styled.button`
 `;
 
 const SuccessMessage = styled.p`
-  margin-top: 15px;
-  color: green;
+  margin: 0 0 15px 0;
+  color: var(--main-color-bg);
   font-weight: 500;
   text-align: center;
 `;
