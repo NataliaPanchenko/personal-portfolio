@@ -1,7 +1,29 @@
 import styled from "styled-components";
-import Link from "next/link";
+import { useState } from "react";
 
 export default function ContactSection() {
+  const [isSent, setIsSent] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(form);
+    const response = await fetch("https://formspree.io/f/xojbrjbp", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      setIsSent(true);
+      form.reset();
+
+      setTimeout(() => {
+        setIsSent(false);
+      }, 3000);
+    }
+  };
+
   return (
     <Section>
       <Container>
@@ -65,10 +87,19 @@ export default function ContactSection() {
           <FormCard>
             <Title>Send a Message</Title>
 
-            <form action="https://formspree.io/f/xojbrjbp" method="POST">
+            <form
+              action="https://formspree.io/f/xojbrjbp"
+              method="POST"
+              onSubmit={handleSubmit}
+            >
               <Input type="text" placeholder="Your name" name="name" />
               <Input type="email" placeholder="Your email" name="email" />
               <TextArea placeholder="Your message..." rows="5" name="message" />
+              {isSent && (
+                <SuccessMessage>
+                  ✅ Your message has been sent! Thank you! ✨
+                </SuccessMessage>
+              )}
               <Button type="submit">Send Message</Button>
             </form>
           </FormCard>
