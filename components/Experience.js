@@ -3,19 +3,19 @@ import styled from "styled-components";
 const experienceData = [
   {
     year: "2026 - Present",
-    title: "Frontend Developer",
+    title: "Frontend Developer 👩🏼‍💻",
     description:
       "Building modern and responsive web applications with React, Next.js, TypeScript, and styled-components.",
   },
   {
     year: "2026",
-    title: "Web Development Bootcamp — Neue Fische",
+    title: "Web Development Bootcamp — Neue Fische 🐠",
     description:
       "Successfully completed an intensive bootcamp focused on frontend and full-stack web development.",
   },
   {
     year: "2025",
-    title: "Self-Taught Frontend Developer",
+    title: "Self-Taught Frontend Developer 🚀",
     description:
       "Started my frontend development journey through online courses, documentation, and personal projects.",
   },
