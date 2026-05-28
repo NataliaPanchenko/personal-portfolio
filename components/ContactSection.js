@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function ContactSection() {
   return (
@@ -17,7 +18,7 @@ export default function ContactSection() {
             <Title>Contact Information</Title>
 
             <InfoItem>
-              <Icon>📧</Icon>
+              <Icon href="mailto:nataliipanchenko@gmail.com">📧</Icon>
               <div>
                 <span>Email</span>
                 <p>nataliipanchenko@gmail.com</p>
@@ -33,7 +34,13 @@ export default function ContactSection() {
             </InfoItem>
 
             <InfoItem>
-              <Icon>💼</Icon>
+              <Icon
+                href="https://linkedin.com/in/nataliapanchenko/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                💼
+              </Icon>
               <div>
                 <span>LinkedIn</span>
                 <p>linkedin.com/in/nataliapanchenko/</p>
@@ -41,7 +48,13 @@ export default function ContactSection() {
             </InfoItem>
 
             <InfoItem>
-              <Icon>💻</Icon>
+              <Icon
+                href="https://github.com/nataliapanchenko"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                💻
+              </Icon>
               <div>
                 <span>GitHub</span>
                 <p>github.com/nataliapanchenko</p>
@@ -128,7 +141,7 @@ const InfoItem = styled.div`
   }
 `;
 
-const Icon = styled.div`
+const Icon = styled.a`
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -137,6 +150,7 @@ const Icon = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 12px;
+  cursor: pointer;
 `;
 
 const Input = styled.input`
