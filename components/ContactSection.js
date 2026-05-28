@@ -1,6 +1,29 @@
 import styled from "styled-components";
+import { useState } from "react";
 
 export default function ContactSection() {
+  const [isSent, setIsSent] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(form);
+    const response = await fetch("https://formspree.io/f/xojbrjbp", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      setIsSent(true);
+      form.reset();
+
+      setTimeout(() => {
+        setIsSent(false);
+      }, 3000);
+    }
+  };
+
   return (
     <Section>
       <Container>
@@ -17,7 +40,7 @@ export default function ContactSection() {
             <Title>Contact Information</Title>
 
             <InfoItem>
-              <Icon>📧</Icon>
+              <Icon href="mailto:nataliipanchenko@gmail.com">📧</Icon>
               <div>
                 <span>Email</span>
                 <p>nataliipanchenko@gmail.com</p>
@@ -33,15 +56,27 @@ export default function ContactSection() {
             </InfoItem>
 
             <InfoItem>
-              <Icon>💼</Icon>
+              <Icon
+                href="https://linkedin.com/in/nataliapanchenko/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                💼
+              </Icon>
               <div>
                 <span>LinkedIn</span>
-                <p>linkedin.com/in/nataliapanchenko/</p>
+                <p>linkedin.com/in/nataliapanchenko</p>
               </div>
             </InfoItem>
 
             <InfoItem>
-              <Icon>💻</Icon>
+              <Icon
+                href="https://github.com/nataliapanchenko"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                💻
+              </Icon>
               <div>
                 <span>GitHub</span>
                 <p>github.com/nataliapanchenko</p>
@@ -52,10 +87,29 @@ export default function ContactSection() {
           <FormCard>
             <Title>Send a Message</Title>
 
-            <form>
-              <Input type="text" placeholder="Your name" />
-              <Input type="email" placeholder="Your email" />
-              <TextArea placeholder="Your message..." rows="5" />
+            <form
+              action="https://formspree.io/f/xojbrjbp"
+              method="POST"
+              onSubmit={handleSubmit}
+            >
+              <Input type="text" placeholder="Your name" name="name" required />
+              <Input
+                type="email"
+                placeholder="Your email"
+                name="email"
+                required
+              />
+              <TextArea
+                placeholder="Your message..."
+                rows="5"
+                name="message"
+                required
+              />
+              {isSent && (
+                <SuccessMessage>
+                  ✅ Your message has been sent! Thank you! ✨
+                </SuccessMessage>
+              )}
               <Button type="submit">Send Message</Button>
             </form>
           </FormCard>
@@ -82,7 +136,7 @@ const Header = styled.div`
     margin-bottom: 10px;
   }
   p {
-    color: var(----text-dark-color);
+    color: var(--text-dark-color);
   }
 `;
 
@@ -128,7 +182,7 @@ const InfoItem = styled.div`
   }
 `;
 
-const Icon = styled.div`
+const Icon = styled.a`
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -137,6 +191,7 @@ const Icon = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 12px;
+  cursor: pointer;
 `;
 
 const Input = styled.input`
@@ -176,4 +231,11 @@ const Button = styled.button`
   &:hover {
     background-color: var(--year-color);
   }
+`;
+
+const SuccessMessage = styled.p`
+  margin: 0 0 15px 0;
+  color: var(--main-color-bg);
+  font-weight: 500;
+  text-align: center;
 `;
