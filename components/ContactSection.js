@@ -66,9 +66,9 @@ export default function ContactSection() {
             <Title>Send a Message</Title>
 
             <form action="https://formspree.io/f/xojbrjbp" method="POST">
-              <Input type="text" placeholder="Your name" />
-              <Input type="email" placeholder="Your email" />
-              <TextArea placeholder="Your message..." rows="5" />
+              <Input type="text" placeholder="Your name" name="name" />
+              <Input type="email" placeholder="Your email" name="email" />
+              <TextArea placeholder="Your message..." rows="5" name="message" />
               <Button type="submit">Send Message</Button>
             </form>
           </FormCard>
@@ -95,7 +95,7 @@ const Header = styled.div`
     margin-bottom: 10px;
   }
   p {
-    color: var(----text-dark-color);
+    color: var(--text-dark-color);
   }
 `;
 
