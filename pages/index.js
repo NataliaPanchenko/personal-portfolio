@@ -6,17 +6,36 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import ContactSection from "@/components/ContactSection";
+import styled from "styled-components";
 
 export default function HomePage() {
   return (
     <>
       <Header />
-      <ProfileIntro />
-      <AboutSection />
-      <Skills />
-      <Experience />
-      <FeaturedProjects />
-      <ContactSection />
+
+      <section id="home">
+        <ProfileIntro />
+      </section>
+
+      <section id="about">
+        <AboutSection />
+      </section>
+
+      <section id="skills">
+        <Skills />
+      </section>
+
+      <section id="experience">
+        <Experience />
+      </section>
+
+      <section id="projects">
+        <FeaturedProjects />
+      </section>
+
+      <section id="contact">
+        <ContactSection />
+      </section>
 
       <Footer />
     </>
