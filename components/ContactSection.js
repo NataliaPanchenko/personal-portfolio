@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
+import Lottie from "lottie-react";
+import animation from "@/public/animation.json";
 
 export default function ContactSection() {
   const [isSent, setIsSent] = useState(false);
@@ -107,7 +109,12 @@ export default function ContactSection() {
               />
               {isSent && (
                 <SuccessMessage>
-                  ✅ Your message has been sent! Thank you! ✨
+                  <Lottie
+                    animationData={animation}
+                    loop
+                    style={{ height: "30px", width: "30px" }}
+                  />
+                  Your message has been sent! Thank you! ✨
                 </SuccessMessage>
               )}
               <Button type="submit">Send Message</Button>
@@ -238,4 +245,8 @@ const SuccessMessage = styled.p`
   color: var(--main-color-bg);
   font-weight: 500;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 `;
