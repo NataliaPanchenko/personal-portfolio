@@ -61,7 +61,6 @@ const HeaderWrapper = styled.header`
   z-index: 1000;
   backdrop-filter: blur(10px);
   background: var(--header-bg);
-  border-bottom: 1px solid var(--border-color);
 `;
 
 const Container = styled.div`
