@@ -32,6 +32,7 @@ export default createGlobalStyle`
     --icon-color: #f3d6e3;
     --input-border-color: #eee;
     --white-color: #fff;
+    --grid-color: rgba(220, 220, 220, 0.4);
   }
 
   *,
@@ -43,5 +44,23 @@ export default createGlobalStyle`
   body {
     margin: 0;
     font-family: system-ui;
+
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--white-color);
+
+  background-image:
+    linear-gradient(
+      var(--grid-color) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      var(--grid-color) 1px,
+      transparent 1px
+    );
+
+  background-size: 80px 80px;
+
   }
 `;
