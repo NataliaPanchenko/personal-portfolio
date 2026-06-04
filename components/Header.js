@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Moon, Menu, X } from "lucide-react";
 import Link from "next/link";
+import ToggleTheme from "./ToggleTheme";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +25,7 @@ export default function Header() {
           </DesktopNavigation>
 
           <RightSide>
-            <IconButton>
-              <Moon size={18} />
-            </IconButton>
+            <ToggleTheme />
 
             <BurgerButton onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X size={20} /> : <Menu size={20} />}
