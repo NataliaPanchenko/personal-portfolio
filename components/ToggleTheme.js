@@ -44,8 +44,8 @@ export default function ToggleTheme() {
 }
 
 const FloatingButton = styled.button`
-  background: var(--dark-mode);
-  color: var(--dark-mode-bg);
+  background: var(--dark-mode-bg);
+  color: var(--dark-mode);
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -57,7 +57,7 @@ const FloatingButton = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--floating-button-shadow);
   z-index: 999;
   transition: all 0.3s ease;
   &:hover {

@@ -98,7 +98,7 @@ const Logo = styled.div`
 const Name = styled.span`
   font-size: 20px;
   font-weight: 500;
-
+  color: var(--text-color);
   @media (max-width: 500px) {
     font-size: 16px;
   }

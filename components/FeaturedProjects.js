@@ -68,7 +68,7 @@ const Grid = styled.div`
 `;
 
 const Card = styled.div`
-  background: white;
+  background: var(--experience-bg);
   border-radius: 24px;
   overflow: hidden;
   border: 1px solid var(--main-color);

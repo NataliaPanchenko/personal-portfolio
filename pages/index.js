@@ -10,7 +10,7 @@ import styled from "styled-components";
 
 export default function HomePage() {
   return (
-    <>
+    <Section>
       <Header />
 
       <section id="home">
@@ -38,6 +38,8 @@ export default function HomePage() {
       </section>
 
       <Footer />
-    </>
+    </Section>
   );
 }
+
+const Section = styled.div``;

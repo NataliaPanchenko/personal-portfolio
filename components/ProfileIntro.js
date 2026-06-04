@@ -98,6 +98,7 @@ const Title = styled.h1`
   margin-top: 20px;
   font-size: 22px;
   font-weight: 700;
+  color: var(--text-color);
 `;
 
 const Subtitle = styled.h2`
