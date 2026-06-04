@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { Moon, Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -114,7 +115,7 @@ const DesktopNavigation = styled.nav`
   }
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   text-decoration: none;
   color: var(--nav-color);
   font-size: 17px;
