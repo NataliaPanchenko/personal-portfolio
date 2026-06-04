@@ -87,7 +87,7 @@ export default function ContactSection() {
           </InfoCard>
 
           <FormCard>
-            <Title>Send a Message</Title>
+            <MessageTitle>Send a Message</MessageTitle>
 
             <form
               action="https://formspree.io/f/xojbrjbp"
@@ -138,6 +138,7 @@ const Container = styled.div`
 const Header = styled.div`
   text-align: center;
   margin-bottom: 50px;
+  color: var(--text-color);
   h2 {
     font-size: 22px;
     margin-bottom: 10px;
@@ -158,20 +159,25 @@ const Grid = styled.div`
 `;
 
 const InfoCard = styled.div`
-  background: var(--header-bg);
   padding: 30px;
   border-radius: 16px;
   box-shadow: var(--box-shadow-color);
+  color: var(--text-color);
 `;
 
 const FormCard = styled.div`
-  background: var(--header-bg);
   padding: 30px;
   border-radius: 16px;
   box-shadow: var(--box-shadow-color);
+  color: var(--text-color);
 `;
 
 const Title = styled.h3`
+  margin-bottom: 20px;
+  color: var(--contact-color);
+`;
+
+const MessageTitle = styled.h3`
   margin-bottom: 20px;
 `;
 

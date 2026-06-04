@@ -108,7 +108,7 @@ const Dot = styled.div`
 `;
 
 const Card = styled.div`
-  background: white;
+  background: var(--experience-bg);
   border: 1px solid var(--main-color);
   border-radius: 22px;
   padding: 28px;

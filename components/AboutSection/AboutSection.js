@@ -53,6 +53,7 @@ const Title = styled.h2`
   text-align: center;
   margin-bottom: 50px;
   font-size: 22px;
+  color: var(--text-color);
 `;
 
 const Container = styled.div`

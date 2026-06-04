@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
   :root {
     --header-bg: rgba(246, 241, 244, 0.9);
+    --bg-color: #fff;
     --logo-bg: #ddb6cb;
     --nav-color: #3b3b3b;
     --nav-hover-color: #cb97b0;
@@ -33,6 +34,30 @@ export default createGlobalStyle`
     --input-border-color: #eee;
     --white-color: #fff;
     --grid-color: rgba(220, 220, 220, 0.4);
+    --dark-mode: #3b3b3b;
+    --dark-mode-bg: #fff;
+    --floating-button-shadow:  0 6px 15px rgba(0, 0, 0, 0.3);
+    --contact-color: #555;
+  }
+
+  .dark {
+    --dark-mode: #fff;
+    --dark-mode-bg: #3b3b3b;
+    --bg-color: #201b2c;
+    --header-bg: #2e2a3b;
+    --text-color: #e1dfe5;
+    --nav-color: #bfbbc4;
+    --icon-bg: #201b2c;
+    --badge-bg: #2d2533;
+    --badge-color: #bb9eb2;
+    --subtitle-color: #bb9eb2;
+    --grid-color: rgba(224, 151, 220, 0.06);
+    --text-dark-color: #bfbbc4;
+    --mobile-menu-bg: #2e2a3b;
+    --tag-color: #fff;
+    --tag-hover: #bb9eb2;
+    --experience-bg:rgba(76, 53, 75, 0.06); 
+    --contact-color: #981352;
   }
 
   *,
@@ -47,20 +72,21 @@ export default createGlobalStyle`
 
   position: relative;
   min-height: 100vh;
-  background-color: var(--white-color);
-
-  background-image:
-    linear-gradient(
-      var(--grid-color) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      var(--grid-color) 1px,
-      transparent 1px
-    );
-
-  background-size: 80px 80px;
+  background-color: var(--bg-color);
 
   }
+
+  body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+
+  background-size: 80px 80px;
+}
 `;

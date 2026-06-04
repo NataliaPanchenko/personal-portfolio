@@ -13,7 +13,7 @@ export default function AboutCard({ icon, title, text }) {
 }
 
 const Card = styled.div`
-  background: white;
+  background: var(--bg-color);
   border: 2px solid var(--card-border);
   border-radius: 24px;
   padding: 14px;
@@ -21,6 +21,7 @@ const Card = styled.div`
   gap: 18px;
   flex-direction: column;
   transition: 0.2s ease;
+  color: var(--text-color);
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 30px var(--box-shadow);

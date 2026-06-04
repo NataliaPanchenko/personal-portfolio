@@ -108,7 +108,7 @@ const CardsWrapper = styled.div`
 `;
 
 const Card = styled.div`
-  background: white;
+  background: var(--bg-color);
   border: 1px solid #efdbe4;
   border-radius: 20px;
   padding: 20px;
