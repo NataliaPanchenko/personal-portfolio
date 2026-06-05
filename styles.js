@@ -38,6 +38,7 @@ export default createGlobalStyle`
     --dark-mode-bg: #fff;
     --floating-button-shadow:  0 6px 15px rgba(0, 0, 0, 0.3);
     --contact-color: #555;
+    --image-border-color: #d6a3b8;
   }
 
   .dark {
@@ -58,6 +59,7 @@ export default createGlobalStyle`
     --tag-hover: #bb9eb2;
     --experience-bg:rgba(76, 53, 75, 0.06); 
     --contact-color: #981352;
+    --image-border-color: #403a52;
   }
 
   *,

@@ -78,7 +78,7 @@ const ImageWrapper = styled.div`
   height: 180px;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid var(--main-color);
+  border: 4px solid var(--image-border-color);
   box-shadow: 0 10px 30px var(--box-shadow-color);
   animation: ${float} 4s ease-in-out infinite;
   z-index: 1;
