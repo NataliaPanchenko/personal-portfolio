@@ -1,14 +1,49 @@
 [{
-    "title": "Event Finder",
-    "description": "A web platform for discovering and booking local events such as concerts, meetups, conferences, and community activities. \n\n Users can browse events, search for interesting activities, view detailed event information, reserve and purchase tickets, and manage their bookings through a personal profile dashboard. The platform also includes user authentication, allowing users to sign up, log in securely, and access their personal information and booking history.",
-    "image": "/event-finder.jpg",
-    "tags": [
-        "Next.js",
-        "JavaScript",
-        "MongoDB",
-        "NextAuth",
-        "Next.js API Routes",
-        "Styled Components"
-    ],
-    "link": "https://event-finder-pearl.vercel.app/"
-}]
+        "title": "Event Finder",
+        "description": "A full-stack event discovery and booking platform that connects users with local events, including concerts, conferences, workshops, meetups, and community activities. \n\n Users can browse events, search for interesting activities, view detailed event information, reserve and purchase tickets, and manage their bookings through a personal profile dashboard. The platform also includes user authentication, allowing users to sign up, log in securely, and access their personal information and booking history.",
+        "image": "/event-finder.jpg",
+        "tags": [
+            "Next.js",
+            "JavaScript",
+            "React",
+            "MongoDB",
+            "NextAuth",
+            "Next.js API Routes",
+            "Styled Components",
+            "Cloudinary",
+            "Vercel"
+        ],
+        "link": "https://event-finder-pearl.vercel.app/"
+    },
+    {
+        "title": "Money manager App",
+        "description": "A full-stack personal finance management application that helps users track their income and expenses in one place. \n\n Users can securely sign in with GitHub or Google, manage transactions, upload receipt images, organize records by category, monitor their total balance and savings, and quickly find transactions using the search feature.",
+        "image": "/money-manager.jpg",
+        "tags": [
+            "Next.js",
+            "JavaScript",
+            "React",
+            "MongoDB",
+            "NextAuth",
+            "Next.js API Routes",
+            "Styled Components",
+            "Cloudinary",
+            "Vercel"
+        ],
+        "link": "https://event-finder-pearl.vercel.app/"
+    },
+    {
+        "title": "Art Gallery",
+        "description": "Art Gallery is a modern web application built with Next.js that allows users to discover artworks, save favorite paintings, and engage with the collection through comments. \n\n The application provides a responsive and intuitive user experience while demonstrating modern frontend development practices, including data fetching, state management, reusable components, and styled-components architecture.",
+        "image": "/art-gallery.jpg",
+        "tags": [
+            "Next.js",
+            "JavaScript",
+            "SWR",
+            "Rest API",
+            "Styled Components",
+            "Vercel"
+        ],
+        "link": "https://art-gallery-bay-five.vercel.app/"
+    }
+]
