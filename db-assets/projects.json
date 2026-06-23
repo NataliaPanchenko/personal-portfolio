@@ -17,7 +17,7 @@
     },
     {
         "title": "Money manager App",
-        "description": "A full-stack personal finance management application that helps users track their income and expenses in one place. \n\n Users can securely sign in with GitHub or Google, manage transactions, upload receipt images, organize records by category, monitor their total balance and savings, and quickly find transactions using the search feature.",
+        "description": "A full-stack personal finance management application that helps users track their income and expenses in one place. \n\n Users can securely sign in with GitHub, manage transactions, upload receipt images, organize records by category, monitor their total balance and savings, and quickly find transactions using the search feature.",
         "image": "/money-manager.jpg",
         "tags": [
             "Next.js",
